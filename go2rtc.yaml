@@ -1,0 +1,25 @@
+# Minimal go2rtc config for receiving the controller screen.
+#
+# The stream MUST exist with an empty source — go2rtc only accepts an
+# incoming push into a stream that is already declared.
+
+streams:
+  drone_screen:
+
+api:
+  listen: ":1984"
+
+rtsp:
+  listen: ":8554"
+  # Optional: require credentials for external pushes/pulls.
+  # username: "pilot"
+  # password: "changeme"
+
+webrtc:
+  listen: ":8555"          # TCP + UDP, forward this if viewing from outside
+  candidates:
+    - stun:8555            # dynamic public IP
+    # - 203.0.113.10:8555  # static public IP instead
+
+log:
+  level: info

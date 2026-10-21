@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Drone Screen Streamer</string>
+    <string-array name="quality_labels">
+        <item>480p / 1.2 Mbps (weak LTE)</item>
+        <item>720p / 2.5 Mbps (default)</item>
+        <item>1080p / 5 Mbps (LAN)</item>
+    </string-array>
+</resources>
