@@ -1,4 +1,4 @@
-# Android General Pourpose screen streamer → go2rtc
+# Android General Pourpose Screen Streamer → go2rtc
 
 Streams the Autel Smart Controller screen (the whole Autel Explorer/Enterprise UI,
 including the live drone video and the map/OSD overlays) to a go2rtc server over RTSP.
